@@ -1,2 +1,4 @@
-# CS6850_DA_Project
-Data Analytics Final Project for CS6850
+# CS6850_project
+Programming material for final Project in CS6850
+
+### Original dataset: https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting/data

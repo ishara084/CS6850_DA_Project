@@ -26,7 +26,6 @@ def split_data(df, target_column, test_size=0.2, random_state=42):
     )
     return X_train, X_test, y_train, y_test
 
-
 def evaluate_model(y_true, y_pred):
     """
     Evaluates a regression model using common metrics.
@@ -43,9 +42,6 @@ def evaluate_model(y_true, y_pred):
     rmse = np.sqrt(mse)
     r2 = r2_score(y_true, y_pred)
 
-    metrics = {
-        "MAE": mae,
-        "RMSE": rmse,
-        "R²": r2,
-    }
-    return metrics
+    print(f"Mean Absolute Error (MAE): {mae:.2f}")
+    print(f"Root Mean Squared Error (RMSE): {rmse:.2f}")
+    print(f"R² Score: {r2:.2f}")

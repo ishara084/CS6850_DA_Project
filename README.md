@@ -1,8 +1,8 @@
-# CS6850_project
-Source code material for final Project in CS6850
+# CS6850 Final Project
+-  Coding material for final project in CS6850 - Data Analytics
+-  Title - Forecasting Walmart Retail Sales with Predictive Data Analysis
 
-### Original dataset: https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting/data
-
+### Original dataset: https://kaggle.com/competitions/walmart-recruiting-store-sales-forecasting (2014. Kaggle)
 
 ### Project structure
 ```
@@ -17,3 +17,8 @@ Source code material for final Project in CS6850
     |   |   |-- main_ML_ready.csv                                       ------------> Main dataset for predictive modeling
     |   |-- source                                                      ------------> Contains source dataset
 ```
+
+### Instruction
+- Original dataset was pre-processed, merged and stored in ```datapreprocessed``` directory and it was used for all analytics and predictive models.
+- Install relevant libraries if not already installed. Necessary libraries are mentioned in top of each notebook
+- If some cell outputs are empty or showing errors, re-execute the notebook.

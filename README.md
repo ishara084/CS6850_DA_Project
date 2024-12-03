@@ -6,7 +6,7 @@
 
 ### Project structure
 ```
-|-- root
+root
 |-- data_preprocessing.ipynb                                            ------------> Initial Data Pre-processing
 |-- libs.py                                                             ------------> Contain common class and methods for data preparation and model evaluation 
 |-- predictive_modeling_data_prep.py                                    ------------> Data preparation for predictive modelings

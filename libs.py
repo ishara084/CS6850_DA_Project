@@ -26,7 +26,7 @@ def split_data(df, target_column, test_size=0.2, random_state=42):
     )
     return X_train, X_test, y_train, y_test
 
-def evaluate_model(y_true, y_pred):
+def evaluate_model(y_true, y_pred, is_holiday):
     """
     Evaluates a regression model using common metrics.
 
@@ -42,6 +42,11 @@ def evaluate_model(y_true, y_pred):
     rmse = np.sqrt(mse)
     r2 = r2_score(y_true, y_pred)
 
+    # Calculate weights for WMAE based on weights given by Walmart on in Kaggle competition
+    weights = is_holiday.apply(lambda x: 5 if x else 1).values
+    wmae = np.sum(weights * np.abs(y_true - y_pred)) / np.sum(weights)
+
     print(f"Mean Absolute Error (MAE): {mae:.2f}")
     print(f"Root Mean Squared Error (RMSE): {rmse:.2f}")
     print(f"R² Score: {r2:.2f}")
+    print(f"Weighted Mean Absolute Error (WMAE): {wmae:.2f}")

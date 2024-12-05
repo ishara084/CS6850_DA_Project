@@ -11,7 +11,7 @@ root
 |-- libs.py                                                             ------------> Contain common class and methods for data preparation and model evaluation 
 |-- predictive_modeling_data_prep.py                                    ------------> Data preparation for predictive modelings
 |-- EDA_summarization_visualization.ipynb                               ------------> EDA Data exploration and summarization
-|-- bias_evaluation.ipynb                                               ------------> Bias and Fairness evaluation of predictive models
+|-- predictive_modeling_bias_evaluation.ipynb                                               ------------> Bias and Fairness evaluation of predictive models
 |-- predictive_modeling_Randome_Forest.ipynb                            ------------> Random Forest Classsifier
     |-- data
     |   |-- preproprocessed

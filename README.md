@@ -9,9 +9,9 @@
 root
 |-- data_preprocessing.ipynb                                            ------------> Initial Data Pre-processing
 |-- libs.py                                                             ------------> Contain common class and methods for data preparation and model evaluation 
-|-- predictive_modeling_data_prep.py                                    ------------> Data preparation for predictive modelings
+|-- predictive_modeling_data_prep.ipynb                                 ------------> Data preparation for predictive modelings
 |-- EDA_summarization_visualization.ipynb                               ------------> EDA Data exploration and summarization
-|-- predictive_modeling_bias_evaluation.ipynb                                               ------------> Bias and Fairness evaluation of predictive models
+|-- predictive_modeling_bias_evaluation.ipynb                           ------------> Bias and Fairness evaluation of predictive models
 |-- predictive_modeling_Randome_Forest.ipynb                            ------------> Random Forest Classsifier
     |-- data
     |   |-- preproprocessed
@@ -21,6 +21,8 @@ root
 ```
 
 ### Instruction
-- Original dataset was pre-processed, merged and stored in ```data\preprocessed``` directory and it was used for all analytics and predictive models.
+
 - Install relevant libraries if not already installed. Necessary libraries are mentioned in top of each notebook
+- Original dataset was pre-processed, merged and stored in ```data\preprocessed``` directory and it was used for all analytics and predictive models.
+- Execute ```predictive_modeling_data_prep.ipynb``` to generate ```main_ML_ready.csv``` for predictive modeling (It was not pushed to repo due to large size)
 - If some cell outputs are empty or showing errors, re-execute the notebook.
